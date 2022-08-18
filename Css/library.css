@@ -1,0 +1,183 @@
+h2{
+	color: white;
+}
+i{
+	color: white;
+}
+.librarySL{
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+
+#library{
+	padding: .6rem .4rem;
+	background: rgba(0,0,0, 0.5);
+	display: flex;
+	flex-direction: column;
+	height: 2rem;
+}
+
+#librarySection{
+	display: flex;
+	justify-content: Space-between;
+}
+#librarySection h2{
+	color: white;
+	font-size: 1rem;
+}
+#librarySection ul li{
+	color: white;
+	font-size: 1rem;
+}
+
+.categorysLibrary{
+	padding-top: 1rem;
+	width: 100%;
+	background: rgba(0,0,0, 0.5);
+}
+.categorysLibrary ul{
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+}
+.categorysLibrary ul li{
+	color: white;
+	font-size: 1rem;
+	padding: .2rem;
+	border: white solid 1px;
+	border-radius: .3rem;
+	text-align: center;
+	background: transparent;
+	position: relative;
+	z-index: 1;
+	transition: .7s;
+}
+
+.categorysLibrary ul li::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 0;
+	background: white;
+	color: white;
+	transition: .7s ease-out;
+	border-radius: .2rem;
+	z-index: -1;
+}
+
+.categorysLibrary ul li:hover::before{
+	content: "";
+	width: 100%;
+	color: black;
+}
+.categorysLibrary ul li:hover{
+	color: black;
+}
+
+
+#playListCards{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+#order{
+	display: flex;
+	flex-direction: row;
+	height: 3rem;
+	align-items: center;
+	justify-content: flex-start;
+
+}
+#order h2{
+	font-size: 2.3rem;
+}
+#order i{
+	font-size: 2.3rem;
+}
+#orderNav{
+	display: flex;
+	flex-direction: row;
+}
+#orderNav i{
+	position: relative;
+}
+
+
+.ulOrderTablets{
+	position: absolute;
+	background: rgba(0,0,0,.5);
+	margin: 1rem 0 0 4rem;
+	padding: 2rem;
+	display: none;
+}
+ .ulOrderTablets li{
+	color: white;
+	margin-top: .4rem;
+	font-size: 1.9rem;
+}
+
+.ulOrderTabletsDiplayed{
+	display: block;
+}
+
+.cardsPl{
+	background: var(--cardColor);
+	width: 90%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	border-radius: .5rem;
+}
+ .cardsPl i{
+	 	font-size: 2rem;
+	 }
+	 .cardsPlText{
+	 	font-size: 2rem;
+	 }
+.cardsPl > img{
+	width: 20%;
+	height: 100%;
+	border-top-left-radius:.5rem;
+	border-bottom-left-radius: .5rem;
+}
+/*MEDIA TABLES*/
+@media screen and (max-width: 1024px){
+	.librarySL{
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.categorysLibrary{
+		transform: translateY(-100%);
+		display: none;
+	}
+	 .categorysLibrary ul li{
+	 	height: 4rem;
+	 	text-align: center;
+	 	font-size: 2.4rem;
+	 }
+	 .cardsPl{
+	 	height: 70%;
+	 }
+	
+}
+
+/* MOBILE VERTION */
+@media screen and (max-width: 600px){
+	.ulOrderTablets{
+		bottom: 4rem;
+		right: 0;
+		width: 100%;
+	}
+	.cardsPl i{
+		font-size: 1rem;		
+	}
+		 
+	.cardsPlText{
+	 	font-size: 1rem;
+	 }
+}

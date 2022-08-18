@@ -1,0 +1,21 @@
+{
+    "default":[
+      {
+  "defaultName": "Master Of Puppets",
+  "time": 33.00,
+  "picture":"./img/music/Master_Of_Puppets.jpg"
+  },
+   {
+  "defaultName": "DROELOE",
+  "time": 20.00,
+  "picture":"./img/music/DROELOE.jpg"
+  },
+  {
+  "defaultName": "Gun's in roses",
+  "time": 20.00,
+  "picture":"./img/music/Gun's_in_roses.jpg"
+  }
+  ]
+  
+
+}

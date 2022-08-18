@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Spotfy</title>
+  
+<!--===============Uniicon link============-->
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/Css/library.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--===============NAV================-->
+  
+  <nav>
+    <div class="current_playing__mobile">
+      <div class="current_playing__mobile-img">
+        <img src="/img/Default/Default_music.jpg" alt="" />
+      </div>
+      <h2>Music Title</h2>
+      <button> <i class="uil uil-play"></i></button>
+    </div>
+
+    <ul class="icons_play">
+      <li class="active"><a href="index.html"><i class="uil uil-estate"></i></a></li>
+      <li><a href="search.html"><i class="uil uil-search"></i></a></li>
+      <li><a href="library.html"><i class="uil uil-books"></i></a></li>
+    </ul>
+    
+  
+    
+    <div class="current_playing">
+      <div class="nav-play_img">
+        <img src="./img/Default/Default_music.jpg" alt="">
+      </div>
+      <div class="button_play">
+        
+        <h2>playList name</h2>
+        <i class="uil uil-play"></i>
+      </div>
+    </div>
+    
+  </nav>
+  
+  
+  <div class="librarySL">
+  <aside id="library">
+  	<div id="librarySection">
+  	<h2>Sua biblioteca</h2>
+  	<ul>
+  		<li><i class="uil uil-plus"></i></li>
+  	</ul>
+  	</div>
+  	
+  	<div class="categorysLibrary">
+  		<ul>
+  			<li>pop</li>
+  		</ul>
+  	</div>
+  </aside>
+  
+  <section id="playListCards">
+  	<div id="order">
+  		<div id="orderNav">
+  		<i id="iUl" class="uil uil-direction">
+  		</i>
+  			<ul class="ulOrderTablets">
+  				<li>Mais recente</li>
+  				<li>Tocados recentemente</li>
+  				<li>Adicionados Recentemente</li>
+  				<li>Ordem alfabetica</li>
+  				<li>Criador</li>
+  			</ul>
+  		<h2>ordenar</h2>
+  		</div>
+  	
+  	</div>
+  	<div class="cardsPl">
+  		<img src="./Img/Default/Default_music.jpg" alt="">
+  		<div class="cardsPlText">
+  			<h2>PlayList Name</h2>
+  			<h4>Artist Name</h4>
+  		</div>
+  		<i class="uil uil-ellipsis-v"></i>
+  	</div>
+  </section>
+ </div>
+  <script type="module" src="./Js/library.js"></script>
+  <script type="module" src="./main.js"></script>
+</body>
+</html>
