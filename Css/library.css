@@ -34,6 +34,7 @@ i{
 	padding-top: 1rem;
 	width: 100%;
 	background: rgba(0,0,0, 0.5);
+	height: 100vh;
 }
 .categorysLibrary ul{
 	display: flex;
